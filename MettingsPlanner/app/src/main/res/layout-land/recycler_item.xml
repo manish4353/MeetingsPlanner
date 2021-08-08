@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_item"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meeting_time"
+            app:layout_constraintTop_toTopOf="@+id/layout_divider"
+            app:layout_constraintBottom_toBottomOf="@+id/layout_divider"
+            app:layout_constraintLeft_toLeftOf="parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meeting_start_time"
+                android:text="@string/dummy_start_time"
+                android:textColor="#424242"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:id="@+id/meeting_time_divider"
+                android:background="#424242"
+                android:layout_marginTop="2dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/meeting_start_time" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/meeting_stop_time"
+                android:text="@string/dummy_end_time"
+                android:textColor="#424242"
+                android:paddingTop="2dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                app:layout_constraintTop_toBottomOf="@+id/meeting_time_divider"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:id="@+id/layout_divider"
+            android:background="#A1A1A1"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/meeting_time"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/meeting_desc"
+            android:text="@string/dummy_text"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:paddingTop="2dp"
+            android:layout_marginLeft="8dp"
+            android:paddingRight="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/layout_divider"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/meeting_attendants"
+            android:text="@string/dummy_meeting_attendants"
+            android:textColor="#424242"
+            android:paddingTop="2dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/meeting_desc"
+            app:layout_constraintLeft_toRightOf="@+id/layout_divider"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/layout_footer_div"
+        android:background="#686868"
+        app:layout_constraintTop_toBottomOf="@+id/layout_item"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

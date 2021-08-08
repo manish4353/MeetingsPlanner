@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MeetingsPlanner</string>
+    <string name="title_activity_home">Meetings Planner</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="dummy_meeting_attendants">Attendee 1, Attendee 2, Attendee 3</string>
+    <string name="dummy_start_time">11:00AM</string>
+    <string name="dummy_end_time">12:00PM</string>
+    <string name="title_activity_scheduler">Meetings Scheduler</string>
+    <string name="text_prev">PREV</string>
+    <string name="schedule_meeting">SCHEDULE A MEETING</string>
+    <string name="dummy_date">06-08-2015</string>
+    <string name="text_next">NEXT</string>
+    <string name="schedule_company_meeting">SCHEDULE COMPANY MEETING</string>
+</resources>
